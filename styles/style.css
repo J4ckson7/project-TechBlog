@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primary: #846AFF;
+    --color-font: #121214;
+    --color-placeholder: #7C7C8A;
+    --color-article: #EEEEFF;
+    --color-header-background: #F8F8FF;
+    --color-white: #FFFFFF;
+    --color-input-background: #EAEAEA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
