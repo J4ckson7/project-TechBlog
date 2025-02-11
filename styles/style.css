@@ -149,9 +149,6 @@ footer{
 
 form{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 }
 
 .formArea{
@@ -171,6 +168,11 @@ form{
     font-weight: 400;
     line-height: 21.09px;
     color: var(--color-placeholder);
+    margin-bottom: 24px;
+}
+
+.assunto{
+    margin-bottom: 0px;
 }
 
 .buttonForm{
