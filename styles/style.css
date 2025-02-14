@@ -19,13 +19,15 @@
 
 header{
     background-color: var(--color-header-background);
+    display: flex;
+    gap: 19.4%;
+    justify-content: center;
 }
 
 .headerContainer{
     display: flex;
-    gap: 235px;
+    gap: 19.4%;
     max-width: 1216px;
-    margin: auto;
     padding: 50px 0px;
 }
 
@@ -52,6 +54,7 @@ header{
     font-weight: 400;
     line-height: 36px;
     color: var(--color-font);
+    max-width: 550px;
 }
 
 .buttonSearchArchive{
@@ -96,15 +99,30 @@ main{
     gap: 32px;
 }
 
+.archive{
+    max-width: 384px;
+}
+
 .archive a{
     text-decoration: none;
+    width: 100%;
+}
+
+article{
+    width: 100%;
+}
+
+.articleHero{
+    width: 100%;
+    height: 100%;
 }
 
 .articleTitleContent{
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 12px; 
-    padding: 32px 24px;
+    padding: min(32px, 8%) min(24px, 6%);
     border-radius: 8px;
 }
 
@@ -187,4 +205,198 @@ form{
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+@media (max-width: 1263px) {
+    .padding-items{
+        padding-inline: 1px;
+    }
+}
+
+@media (max-width: 1262px) {
+    .padding-items{
+        padding-inline: 2px;
+    }
+}
+
+@media (max-width: 1261px) {
+    .padding-items{
+        padding-inline: 3px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .padding-items{
+        padding-inline: 4px;
+    }
+}
+
+@media (max-width: 1259px) {
+    .padding-items{
+        padding-inline: 5px;
+    }
+}
+
+@media (max-width: 1258px) {
+    .padding-items{
+        padding-inline: 6px;
+    }
+}
+
+@media (max-width: 1257px) {
+    .padding-items{
+        padding-inline: 7px;
+    }
+}
+
+@media (max-width: 1257px) {
+    .padding-items{
+        padding-inline: 8px;
+    }
+}
+
+@media (max-width: 1256px) {
+    .padding-items{
+        padding-inline: 9px;
+    }
+}
+
+@media (max-width: 1255px) {
+    .padding-items{
+        padding-inline: 10px;
+    }
+}
+
+@media (max-width: 1254px) {
+    .padding-items{
+        padding-inline: 11px;
+    }
+}
+
+@media (max-width: 1253px) {
+    .padding-items{
+        padding-inline: 12px;
+    }
+}
+
+@media (max-width: 1252px) {
+    .padding-items{
+        padding-inline: 13px;
+    }
+
+    .articleTitle{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1251px) {
+    .padding-items{
+        padding-inline: 14px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .padding-items{
+        padding-inline: 15px;
+    }
+}
+
+@media (max-width: 1249px) {
+    .padding-items{
+        padding-inline: 16px;
+    }
+}
+
+@media (max-width: 1248px) {
+    .padding-items{
+        padding-inline: 17px;
+    }
+}
+
+@media (max-width: 1247px) {
+    .padding-items{
+        padding-inline: 18px;
+    }
+}
+
+@media (max-width: 1246px) {
+    .padding-items{
+        padding-inline: 19px;
+    }
+}
+
+@media (max-width: 1245px) {
+    .padding-items{
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 1244px) {
+    .padding-items{
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 1243px) {
+    .padding-items{
+        padding-inline: 21px;
+    }
+}
+
+@media (max-width: 1242px) {
+    .padding-items{
+        padding-inline: 22px;
+    }
+}
+
+@media (max-width: 1241px) {
+    .padding-items{
+        padding-inline: 23px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .padding-items{
+        padding-inline: 24px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .articleTitle{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1153px) {
+    .articleContent{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1006px) {
+    .articleContent{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 942px) {
+    .articleContent{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 891px) {
+    .archives{
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+
+    .articleContent{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .articleContent{
+        font-size: 14px;
+    }
 }
