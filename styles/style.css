@@ -20,13 +20,12 @@
 header{
     background-color: var(--color-header-background);
     display: flex;
-    gap: 19.4%;
     justify-content: center;
 }
 
 .headerContainer{
     display: flex;
-    gap: 19.4%;
+    gap: 16.1%;
     max-width: 1216px;
     padding: 50px 0px;
 }
@@ -70,6 +69,11 @@ header{
     text-align: center;
     font-weight: 700;
     font-size: 18px;
+}
+
+.headerFigure{
+    width: min(400px, 40.4%);
+    height: auto;
 }
 
 main{
@@ -368,24 +372,103 @@ form{
 }
 
 @media (max-width: 1153px) {
-    .articleContent{
-        font-size: 17px;
+    .headerDesk{
+        font-size: 39px;
+    }
+
+    .headerDescription{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1138px) {
+    .headerDesk{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 1121px) {
+    .headerDesk{
+        font-size: 37px;
+    }
+
+    .headerDescription{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1138px) {
+    .headerDesk{
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .headerDesk{
+        font-size: 35px;
+    }
+
+    .headerDescription{
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1074px) {
+    .headerDesk{
+        font-size: 34px;
+    }
+
+    .headerDescription{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1074px) {
+    .headerDesk{
+        font-size: 33px;
     }
 }
 
 @media (max-width: 1006px) {
+    .headerDesk{
+        font-size: 32px;
+    }
+
     .articleContent{
         font-size: 16px;
     }
 }
 
+@media (max-width: 966px) {
+    .headerDesk{
+        font-size: 31px;
+    }
+}
+
 @media (max-width: 942px) {
+    .headerDesk{
+        font-size: 30px;
+    }
+
     .articleContent{
         font-size: 15px;
     }
 }
 
 @media (max-width: 891px) {
+    .headerContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .headerContent{
+        max-width: 550px;
+        text-align: center;
+        align-items: center;
+    }
+
     .archives{
         grid-template: 1fr 1fr 1fr / 1fr 1fr;
     }
