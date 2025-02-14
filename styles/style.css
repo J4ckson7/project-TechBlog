@@ -40,7 +40,7 @@ header{
 .headerDesk{
     font-size: 40px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: min(40px, 128%);
     color: var(--color-font);
 }
 
@@ -51,7 +51,7 @@ header{
 .headerDescription{
     font-size: 24px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 150%;
     color: var(--color-font);
     max-width: 550px;
 }
@@ -72,7 +72,7 @@ header{
 }
 
 .headerFigure{
-    width: min(400px, 40.4%);
+    width: min(400px, 60%);
     height: auto;
 }
 
@@ -395,11 +395,19 @@ form{
     .headerDescription{
         font-size: 22px;
     }
+
+    .mainTitle{
+        font-size: 31px;
+    }
 }
 
-@media (max-width: 1138px) {
+@media (max-width: 1104px) {
     .headerDesk{
         font-size: 36px;
+    }
+
+    .footerTitle{
+        font-size: 31px;
     }
 }
 
@@ -437,6 +445,14 @@ form{
     .articleContent{
         font-size: 16px;
     }
+
+    .mainTitle{
+        font-size: 30px;
+    }
+
+    .footerTitle{
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 966px) {
@@ -469,6 +485,10 @@ form{
         align-items: center;
     }
 
+    .mainTitle{
+        font-size: 29px;
+    }
+
     .archives{
         grid-template: 1fr 1fr 1fr / 1fr 1fr;
     }
@@ -476,10 +496,92 @@ form{
     .articleContent{
         font-size: 16px;
     }
+
+    .footerTitle{
+        font-size: 29px;
+    }
 }
 
 @media (max-width: 768px) {
-    .articleContent{
+    .mainTitle{
+        font-size: 28px;
+    }
+
+    .footerTitle{
+        font-size: 28px;
+    }
+
+    .post{
+        padding: min(19px, 5%) min(24px, 6%);
+    }
+}
+
+@media (max-width: 714px) {
+    .buttonFormText{
+        font-size: 17px;
+    }
+
+    .post{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 640px) {
+    .mainTitle{
+        font-size: 27px;
+    }
+
+    .buttonFormText{
+        font-size: 16px;
+    }
+
+    .post{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 586px) {
+    .mainTitle{
+        font-size: 26px;
+    }
+
+    .archives{
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+    }
+
+    .buttonFormText{
+        font-size: 15px;
+    }
+
+    .post{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainTitle{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 443px) {
+    .headerDesk{
+        font-size: 24px;
+    }
+
+    .headerDescription{
+        font-size: 16px;
+    }
+
+    .searchArchive{
+        font-size: 16px;
+    }
+
+    .mainTitle{
+        font-size: 24px;
+    }
+
+    .buttonFormText, .post{
         font-size: 14px;
     }
 }
